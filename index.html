@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Metrix AI — O cérebro digital da sua empresa</title>
+<meta name="description" content="O primeiro SDR Agent AI que entende seu negócio, negocia clientes e executa processos em qualquer sistema. Agentes inteligentes. Empresas mais lucrativas." />
+<meta name="theme-color" content="#05060a" />
+<meta property="og:title" content="Metrix AI — Sua empresa funcionando com agentes de IA" />
+<meta property="og:description" content="Conectamos negócios através de Inteligência Artificial. Transformamos dados em decisões e decisões em lucro." />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="icon" type="image/png" href="data:image/png;base64,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" />
+<link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+
+<!-- Fundo animado -->
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-glow bg-glow--a" aria-hidden="true"></div>
+<div class="bg-glow bg-glow--b" aria-hidden="true"></div>
+
+<!-- Header -->
+<header class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="Metrix AI">
+    <img class="brand__logo" src="data:image/png;base64,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" alt="" aria-hidden="true" />
+    <span class="brand__text">METRIX<span class="brand__ai">AI</span></span>
+  </a>
+  <nav class="nav__links" aria-label="Navegação principal">
+    <a href="#chatbot">Não é chatbot</a>
+    <a href="#como">Como funciona</a>
+    <a href="#solucoes">Soluções</a>
+    <a href="#economia">Economia</a>
+    <a href="#core">Infraestrutura</a>
+    <a href="#prova">Prova</a>
+    <a href="#entregas">Entregas</a>
+  </nav>
+  <a class="btn btn--primary btn--sm nav__cta" href="#cta">Agendar demonstração</a>
+  <button class="nav__burger" id="burger" aria-label="Abrir menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero__copy reveal">
+      <span class="eyebrow">Inteligência Operacional</span>
+      <h1 class="hero__title">
+        Sua empresa não precisa de mais um chatbot.
+        <span class="grad">Precisa de um colaborador digital.</span>
+      </h1>
+      <p class="hero__sub">
+        O <strong>SDR Agent AI</strong> conversa, qualifica, negocia, agenda, vende e executa
+        ações em qualquer sistema da sua empresa através de APIs. Enquanto isso, aprende com
+        seus dados e entrega inteligência para aumentar lucro e reduzir custos.
+      </p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#cta">Agendar demonstração</a>
+        <a class="btn btn--ghost" href="#como">
+          <span class="play" aria-hidden="true">▶</span>
+          Veja uma empresa funcionando com IA
+        </a>
+      </div>
+      <ul class="hero__pills">
+        <li>WhatsApp</li><li>CRM</li><li>ERP</li><li>Financeiro</li><li>APIs</li><li>BI</li>
+      </ul>
+    </div>
+
+    <!-- Animação: Lead → SDR → CRM → ... → CEO -->
+    <div class="hero__flow reveal" aria-label="Fluxo: do lead ao CEO, tudo conectado">
+      <div class="flow">
+        <div class="flow__node" data-i="0"><span class="flow__ico">👋</span><span class="flow__lbl">Lead</span></div>
+        <div class="flow__link"><span class="flow__pulse"></span></div>
+        <div class="flow__node flow__node--star" data-i="1"><span class="flow__ico">🤖</span><span class="flow__lbl">SDR Agent</span></div>
+        <div class="flow__link"><span class="flow__pulse"></span></div>
+        <div class="flow__node" data-i="2"><span class="flow__ico">🗂️</span><span class="flow__lbl">CRM</span></div>
+        <div class="flow__link"><span class="flow__pulse"></span></div>
+        <div class="flow__node" data-i="3"><span class="flow__ico">💰</span><span class="flow__lbl">Financeiro</span></div>
+        <div class="flow__link"><span class="flow__pulse"></span></div>
+        <div class="flow__node" data-i="4"><span class="flow__ico">📦</span><span class="flow__lbl">ERP</span></div>
+        <div class="flow__link"><span class="flow__pulse"></span></div>
+        <div class="flow__node" data-i="5"><span class="flow__ico">⚙️</span><span class="flow__lbl">Operação</span></div>
+        <div class="flow__link"><span class="flow__pulse"></span></div>
+        <div class="flow__node" data-i="6"><span class="flow__ico">📊</span><span class="flow__lbl">Dashboard</span></div>
+        <div class="flow__link"><span class="flow__pulse"></span></div>
+        <div class="flow__node flow__node--ceo" data-i="7"><span class="flow__ico">🧠</span><span class="flow__lbl">CEO pergunta à IA</span></div>
+      </div>
+      <p class="flow__caption">Tudo conectado. Do primeiro contato à decisão do CEO.</p>
+    </div>
+  </section>
+
+  <!-- ============ NÃO SOMOS UM CHATBOT ============ -->
+  <section class="section" id="chatbot">
+    <div class="section__head reveal">
+      <span class="eyebrow">A diferença</span>
+      <h2 class="section__title">Não somos um chatbot.</h2>
+      <p class="section__lead">Um chatbot responde. Um colaborador digital resolve.</p>
+    </div>
+    <div class="compare reveal">
+      <div class="compare__card compare__card--bad">
+        <h3>Chatbot tradicional</h3>
+        <ul>
+          <li>Responde perguntas</li>
+          <li>Segue fluxo engessado</li>
+          <li>Não conhece seu negócio</li>
+          <li>Não executa tarefas</li>
+          <li>Não aprende</li>
+        </ul>
+      </div>
+      <div class="compare__vs" aria-hidden="true">vs</div>
+      <div class="compare__card compare__card--good">
+        <h3>SDR Agent AI</h3>
+        <ul>
+          <li>Entende contexto</li>
+          <li>Negocia</li>
+          <li>Qualifica</li>
+          <li>Decide</li>
+          <li>Executa</li>
+          <li>Aprende</li>
+          <li>Conecta sistemas</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COMO FUNCIONA (cena viva) ============ -->
+  <section class="section section--alt" id="como">
+    <div class="section__head reveal">
+      <span class="eyebrow">Em cinco passos, ao vivo</span>
+      <h2 class="section__title">Como funciona</h2>
+      <p class="section__lead">
+        Isso é o que acontece, em tempo real, toda vez que um lead chega.
+        Clique numa etapa ou só assista.
+      </p>
+    </div>
+    <div class="hiw reveal">
+      <ol class="hiw__steps" aria-label="Etapas do processo">
+        <li class="hiw-step">
+          <button class="hiw-step__btn" type="button">
+            <span class="hiw-step__n">1</span>
+            <span class="hiw-step__txt"><strong>Recebe</strong><em>Entra por qualquer canal, sem perder contexto.</em></span>
+          </button>
+          <div class="hiw-step__extra"><ul class="tags">
+            <li>WhatsApp</li><li>Instagram</li><li>Site</li><li>Telefone</li><li>Email</li><li>API</li>
+          </ul></div>
+          <span class="hiw-step__bar"><span></span></span>
+        </li>
+        <li class="hiw-step">
+          <button class="hiw-step__btn" type="button">
+            <span class="hiw-step__n">2</span>
+            <span class="hiw-step__txt"><strong>Entende</strong><em>Consulta tudo e enriquece antes de responder.</em></span>
+          </button>
+          <div class="hiw-step__extra"><ul class="tags">
+            <li>Consulta CRM</li><li>Consulta ERP</li><li>Histórico</li><li>Documentos</li><li>Data Lake</li><li>Enriquece dados</li>
+          </ul></div>
+          <span class="hiw-step__bar"><span></span></span>
+        </li>
+        <li class="hiw-step">
+          <button class="hiw-step__btn" type="button">
+            <span class="hiw-step__n">3</span>
+            <span class="hiw-step__txt"><strong>Negocia</strong><em>Conversa como gente, com objetivo claro.</em></span>
+          </button>
+          <div class="hiw-step__extra"><ul class="tags">
+            <li>Conversa naturalmente</li><li>Quebra objeções</li><li>Qualifica</li><li>Agenda</li><li>Vende</li>
+          </ul></div>
+          <span class="hiw-step__bar"><span></span></span>
+        </li>
+        <li class="hiw-step">
+          <button class="hiw-step__btn" type="button">
+            <span class="hiw-step__n">4</span>
+            <span class="hiw-step__txt"><strong>Executa</strong><em>Age nos seus sistemas, não só responde.</em></span>
+          </button>
+          <div class="hiw-step__extra"><ul class="tags">
+            <li>Cria pedido</li><li>Atualiza CRM</li><li>Emite proposta</li><li>Abre chamado</li><li>Envia contrato</li><li>Integra APIs</li>
+          </ul></div>
+          <span class="hiw-step__bar"><span></span></span>
+        </li>
+        <li class="hiw-step">
+          <button class="hiw-step__btn" type="button">
+            <span class="hiw-step__n">5</span>
+            <span class="hiw-step__txt"><strong>Aprende</strong><em>Cada interação vira inteligência de gestão.</em></span>
+          </button>
+          <div class="hiw-step__extra"><ul class="tags">
+            <li>Atualiza dashboards</li><li>Gera alertas</li><li>Cria relatórios</li><li>Entrega insights</li>
+          </ul></div>
+          <span class="hiw-step__bar"><span></span></span>
+        </li>
+      </ol>
+
+      <div class="hiw__stage" id="hiwStage">
+        <svg viewBox="0 0 720 540" role="img"
+          aria-label="Animação: canais enviando leads para o núcleo Metrix AI, que consulta sistemas, negocia, executa e aprende"></svg>
+
+        <div class="hiw-chat" id="hiwChat" aria-hidden="true"></div>
+        <div class="hiw-exec" id="hiwExec" aria-hidden="true"></div>
+
+        <div class="hiw-learn" id="hiwLearn" aria-hidden="true">
+          <h4>Inteligência de gestão</h4>
+          <div class="hiw-bars">
+            <span style="--h:72%"></span><span style="--h:48%"></span><span style="--h:86%"></span>
+            <span style="--h:60%"></span><span style="--h:95%"></span>
+          </div>
+          <div class="hiw-kpis"><b class="up">Conversão +18%</b><b class="down">CAC −23%</b></div>
+          <div class="hiw-alert">⚠️ 12 leads parados na etapa Proposta</div>
+          <div class="hiw-alert">📈 Relatório semanal pronto às 8h</div>
+        </div>
+
+        <p class="hiw__caption">
+          <strong id="hiwCapT">1 · Recebe — o lead entra por qualquer canal</strong>
+          <span id="hiwCapS">Tudo começa com uma conversa.</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SOLUÇÕES (3 produtos) ============ -->
+  <section class="section" id="solucoes">
+    <div class="section__head reveal">
+      <span class="eyebrow">O que você contrata</span>
+      <h2 class="section__title">Três formas de colocar a Metrix pra trabalhar</h2>
+      <p class="section__lead">
+        Comece pelo SDR com CRM, o caminho mais curto pra vender mais.
+        Depois, automatize a operação e estruture seus dados.
+      </p>
+    </div>
+    <div class="solutions">
+      <article class="sol sol--hero reveal">
+        <span class="sol__badge">Comece por aqui</span>
+        <span class="sol__num">01</span>
+        <h3>SDR Agent + CRM com IA</h3>
+        <p class="sol__tag">O colaborador digital que atende, qualifica, negocia e vende. Com CRM incluso na plataforma.</p>
+        <ul class="sol__list">
+          <li>Atendimento 24/7 no WhatsApp, Instagram, site, telefone e email</li>
+          <li>Qualifica, quebra objeções, agenda reuniões e fecha vendas</li>
+          <li>CRM integrado: campos, funil e histórico atualizados sozinhos</li>
+          <li>Você acompanha tudo em tempo real, sem digitar nada</li>
+        </ul>
+        <a class="btn btn--primary" href="#cta">Agendar demonstração</a>
+      </article>
+      <article class="sol reveal">
+        <span class="sol__num">02</span>
+        <h3>Automação &amp; Sistemas</h3>
+        <p class="sol__tag">Diga o que você precisa. Nós integramos e automatizamos com IA e tecnologia, de ponta a ponta.</p>
+        <ul class="sol__list">
+          <li>Sistemas, plataformas e painéis digitais sob medida</li>
+          <li>Integração entre ERP, CRM, financeiro, planilhas e APIs</li>
+          <li>Tarefas, relatórios e rotinas rodando no automático</li>
+          <li>Processos desenhados pra cortar custo e retrabalho</li>
+        </ul>
+        <a class="sol__link" href="#cta">Quero automatizar →</a>
+      </article>
+      <article class="sol reveal">
+        <span class="sol__num">03</span>
+        <h3>Dados &amp; Atribuição</h3>
+        <p class="sol__tag">Seus números batendo, do clique à venda. A base que alimenta os agentes.</p>
+        <ul class="sol__list">
+          <li>Atribuição implementada: Google, Meta, UTM, server side e CAPI</li>
+          <li>GA4 e Web Analytics estruturados, medindo o que importa</li>
+          <li>Data Lake: criação, configuração e estruturação</li>
+          <li>Dashboards e relatórios em que dá pra confiar</li>
+        </ul>
+        <a class="sol__link" href="#cta">Quero meus dados certos →</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ ECONOMIA ============ -->
+  <section class="section economy" id="economia">
+    <div class="economy__inner reveal">
+      <span class="eyebrow">O que quase ninguém fala</span>
+      <h2 class="economy__title">O lucro está escondido na <span class="grad">operação.</span></h2>
+      <div class="economy__text">
+        <p>A maioria das empresas tenta vender mais. Poucas percebem quanto dinheiro
+        perdem todos os dias com retrabalho, atendimento lento, processos manuais,
+        erros operacionais e falta de integração.</p>
+        <p>Nosso objetivo não é apenas aumentar faturamento. <strong>É aumentar margem.</strong></p>
+        <p class="economy__punch">
+          Economizar <span class="grad">R$ 100 mil por mês</span> gera exatamente o mesmo
+          impacto financeiro que vender centenas de milhares de reais a mais.
+        </p>
+      </div>
+      <div class="economy__scale">
+        <div class="economy__side">
+          <span class="economy__big">+ Faturamento</span>
+          <span class="economy__meta">Custa CAC, mídia, time comercial</span>
+        </div>
+        <div class="economy__eq">=</div>
+        <div class="economy__side economy__side--win">
+          <span class="economy__big">− Custos</span>
+          <span class="economy__meta">Margem direta, todo mês, sem gastar mais</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INFRAESTRUTURA / CORE ============ -->
+  <section class="section" id="core">
+    <div class="section__head reveal">
+      <span class="eyebrow">A infraestrutura invisível</span>
+      <h2 class="section__title">Metrix AI Core</h2>
+      <p class="section__lead">
+        Data Lake, Web Analytics, APIs e BI deixam de ser o produto.
+        Passam a ser a infraestrutura que torna os agentes inteligentes.
+      </p>
+    </div>
+    <div class="core reveal" aria-label="Metrix AI Core conectado a todos os sistemas">
+      <div class="core__center">
+        <span class="core__title">METRIX</span>
+        <span class="core__sub">AI CORE</span>
+      </div>
+      <div class="core__ring core__ring--1"></div>
+      <div class="core__ring core__ring--2"></div>
+      <div class="core__orbit" id="coreOrbit"><!-- nós injetados via JS --></div>
+    </div>
+    <p class="core__caption reveal">Tudo aponta para o Core. E tudo volta com inteligência.</p>
+  </section>
+
+  <!-- ============ PROVA ============ -->
+  <section class="section section--alt" id="prova">
+    <div class="section__head reveal">
+      <span class="eyebrow">Resultado, não promessa</span>
+      <h2 class="section__title">A prova está nos números</h2>
+      <p class="section__lead">Impacto medido onde importa: margem, tempo e receita recuperada.</p>
+    </div>
+    <div class="stats">
+      <div class="stat reveal"><span class="stat__num" data-to="100" data-prefix="R$ " data-suffix=" mil/mês">0</span><span class="stat__lbl">Redução de custo operacional</span></div>
+      <div class="stat reveal"><span class="stat__num" data-to="73" data-suffix="%">0</span><span class="stat__lbl">Tempo economizado no atendimento</span></div>
+      <div class="stat reveal"><span class="stat__num" data-to="4" data-suffix="x">0</span><span class="stat__lbl">Mais leads recuperados</span></div>
+      <div class="stat reveal"><span class="stat__num" data-to="24" data-suffix="/7">0</span><span class="stat__lbl">Operando sem pausa</span></div>
+    </div>
+  </section>
+
+  <!-- ============ SOLUÇÕES QUE ENTREGAMOS ============ -->
+  <section class="section" id="entregas">
+    <div class="section__head reveal">
+      <span class="eyebrow">Na prática</span>
+      <h2 class="section__title">Soluções que entregamos</h2>
+      <p class="section__lead">
+        Frente a frente, o que colocamos de pé na sua operação — da conversa
+        com o cliente ao relatório na mesa da diretoria.
+      </p>
+    </div>
+    <div class="deliv">
+      <article class="deliv__row reveal">
+        <div class="deliv__head">
+          <span class="deliv__num">01</span>
+          <h3>Atendimento e vendas com IA</h3>
+        </div>
+        <div class="deliv__body">
+          <p>O SDR Agent conversa, qualifica e vende nos seus canais, com CRM incluso na plataforma.</p>
+          <ul class="deliv__list">
+            <li>Atendimento 24/7 no WhatsApp, Instagram, site, telefone e email</li>
+            <li>Qualificação, quebra de objeções, agendamento e fechamento</li>
+            <li>CRM atualizado automaticamente: funil, campos e histórico</li>
+          </ul>
+        </div>
+      </article>
+      <article class="deliv__row reveal">
+        <div class="deliv__head">
+          <span class="deliv__num">02</span>
+          <h3>Integrações e automação</h3>
+        </div>
+        <div class="deliv__body">
+          <p>Seus sistemas conversando entre si e as rotinas rodando sozinhas, sob medida.</p>
+          <ul class="deliv__list">
+            <li>Integração entre APIs, ERP, CRM, financeiro e planilhas</li>
+            <li>Tarefas, relatórios e processos no automático</li>
+            <li>Sistemas e plataformas digitais construídos pra sua operação</li>
+          </ul>
+        </div>
+      </article>
+      <article class="deliv__row reveal">
+        <div class="deliv__head">
+          <span class="deliv__num">03</span>
+          <h3>Web Analytics</h3>
+        </div>
+        <div class="deliv__body">
+          <p>Medição estruturada, configurada e funcionando — números que batem com a realidade.</p>
+          <ul class="deliv__list">
+            <li>GA4 implantado do zero ou auditado e corrigido</li>
+            <li>Tags, eventos e conversões configurados</li>
+            <li>Funis e métricas confiáveis pra decidir</li>
+          </ul>
+        </div>
+      </article>
+      <article class="deliv__row reveal">
+        <div class="deliv__head">
+          <span class="deliv__num">04</span>
+          <h3>Atribuição</h3>
+        </div>
+        <div class="deliv__body">
+          <p>De onde veio o lead, a venda e o resultado — sem achismo.</p>
+          <ul class="deliv__list">
+            <li>Google, Meta e UTMs padronizados de ponta a ponta</li>
+            <li>Server side e CAPI implementados</li>
+            <li>ROI por canal e por campanha</li>
+          </ul>
+        </div>
+      </article>
+      <article class="deliv__row reveal">
+        <div class="deliv__head">
+          <span class="deliv__num">05</span>
+          <h3>Banco de dados e Data Lake</h3>
+        </div>
+        <div class="deliv__body">
+          <p>A base que sustenta os agentes e os dashboards, criada e estruturada por nós.</p>
+          <ul class="deliv__list">
+            <li>Criação, configuração e estruturação do Data Lake</li>
+            <li>Unificação de fontes: CRM, ERP, mídia, planilhas</li>
+            <li>Governança: dado limpo, organizado e acessível</li>
+          </ul>
+        </div>
+      </article>
+      <article class="deliv__row reveal">
+        <div class="deliv__head">
+          <span class="deliv__num">06</span>
+          <h3>BI e inteligência executiva</h3>
+        </div>
+        <div class="deliv__body">
+          <p>Números prontos pra decisão, e uma IA que responde à diretoria na hora.</p>
+          <ul class="deliv__list">
+            <li>Dashboards e KPIs por área</li>
+            <li>Alertas e insights automáticos</li>
+            <li>Relatórios executivos, previsões e tendências sob demanda</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ CTA FINAL ============ -->
+  <section class="cta" id="cta">
+    <div class="cta__inner reveal">
+      <h2 class="cta__title">
+        Sua empresa está pronta para contratar seu
+        <span class="grad">primeiro colaborador digital?</span>
+      </h2>
+      <p class="cta__sub">Agende uma demonstração e veja um agente operando o seu negócio de verdade.</p>
+      <div class="cta__actions">
+        <a class="btn btn--primary btn--lg" href="mailto:contato@metrix.ai?subject=Quero%20agendar%20uma%20demonstra%C3%A7%C3%A3o%20do%20SDR%20Agent%20AI">Agendar demonstração</a>
+        <a class="btn btn--ghost btn--lg" href="#hero">Ver como funciona</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER / REPOSICIONAMENTO ============ -->
+<footer class="footer">
+  <div class="footer__brandcol">
+    <a class="brand" href="#top" aria-label="Metrix AI">
+      <img class="brand__logo" src="data:image/png;base64,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" alt="" aria-hidden="true" />
+      <span class="brand__text">METRIX<span class="brand__ai">AI</span></span>
+    </a>
+    <p class="footer__tag">Inteligência Operacional. O cérebro digital da sua empresa.</p>
+  </div>
+  <div class="footer__slogans">
+    <span>Conectamos negócios através de Inteligência Artificial.</span>
+    <span>Agentes inteligentes. Empresas mais lucrativas.</span>
+    <span>Transformamos dados em decisões e decisões em lucro.</span>
+    <span>Onde dados encontram ação.</span>
+  </div>
+  <div class="footer__legal">
+    <span>© 2026 Metrix AI</span>
+    <a href="#cta">Agendar demonstração</a>
+  </div>
+</footer>
+
+<script src="./script.js" defer></script>
+</body>
+</html>
