@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>API Oficial do WhatsApp para empresas | Metrix AI</title><meta name="description" content="Número da sua empresa na API oficial do WhatsApp, configurado pela Metrix: conta na Meta, templates, webhook, vários atendentes e IA opcional.">
+<meta name="theme-color" content="#05060a"><link rel="canonical" href="https://ai.metrixconsultoria.com/api-oficial/">
+<meta property="og:title" content="API Oficial do WhatsApp para empresas | Metrix AI"><meta property="og:description" content="Número da sua empresa na API oficial do WhatsApp, configurado pela Metrix: conta na Meta, templates, webhook, vários atendentes e IA opcional."><meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script>window.dataLayer=window.dataLayer||[];</script>
+<style>
+:root{--bg:#05060a;--panel:#0e1120;--panel-2:#12162a;--line:rgba(255,255,255,.08);--line-2:rgba(255,255,255,.14);--txt:#eaf0ff;--dim:#9aa6c4;--mute:#68728f;--brand:#5b8cff;--wa:#22c55e;--grad:linear-gradient(105deg,#5b8cff 0%,#8b5bff 45%,#22d3ee 100%);--wai:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.5 12.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1l-.9 1.1c-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3z'/%3E%3C/svg%3E")}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.6 Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(600px 500px at 10% -10%,rgba(52,82,209,.45),transparent 70%),radial-gradient(560px 480px at 100% 30%,rgba(109,47,209,.35),transparent 70%)}
+h1,h2,h3{font-family:Sora,Inter,sans-serif;letter-spacing:-.02em;line-height:1.15;margin:0}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.nav{position:sticky;top:0;z-index:10;backdrop-filter:blur(14px);background:rgba(5,6,10,.7);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
+.brand{font-family:Sora,sans-serif;font-weight:800;letter-spacing:.04em}.brand b{margin-left:4px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:999px;padding:14px 22px;font:600 15px Inter,sans-serif;cursor:pointer;transition:transform .15s,filter .15s;text-align:center}
+.btn:hover{transform:translateY(-1px);filter:brightness(1.08)}
+.btn--wa{background:var(--wa);color:#04210f}.btn--ghost{border:1px solid var(--line-2);color:var(--txt);background:transparent}
+.btn--sm{padding:9px 16px;font-size:14px}
+.hero{padding-top:72px;padding-bottom:48px;display:grid;grid-template-columns:1.2fr .9fr;gap:40px;align-items:center}
+.eyebrow{display:inline-block;font-size:13px;font-weight:600;color:var(--brand);text-transform:uppercase;letter-spacing:.12em;margin-bottom:14px}
+.hero h1{font-size:clamp(32px,5vw,50px)}
+.hero p{color:var(--dim);font-size:18px;margin:18px 0 28px}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px}
+.card{background:linear-gradient(180deg,var(--panel-2),var(--panel));border:1px solid var(--line);border-radius:20px;padding:24px}
+.pain li{margin:10px 0;color:var(--dim);list-style:none;padding-left:28px;position:relative}
+.pain li:before{content:"✕";position:absolute;left:0;color:#ef4444;font-weight:700}
+.pain ul{padding:0;margin:12px 0 0}
+section.block{padding:56px 0;border-top:1px solid var(--line)}
+section.block h2{font-size:clamp(26px,3.4vw,36px);margin-bottom:10px}
+.lead{color:var(--dim);max-width:680px;margin:0 0 32px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.step b{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--grad);color:#fff;margin-bottom:12px;font-family:Sora}
+.step h3,.feat h3{font-size:18px;margin-bottom:6px}.step p,.feat p{color:var(--dim);margin:0;font-size:15px}
+.check li{list-style:none;padding-left:28px;position:relative;margin:10px 0}
+.check li:before{content:"✓";position:absolute;left:0;color:var(--wa);font-weight:700}.check{padding:0;margin:0}
+details{border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-bottom:10px;background:var(--panel)}
+summary{cursor:pointer;font-weight:600}details p{color:var(--dim);margin:10px 0 0}
+form{display:grid;gap:12px}
+label{font-size:14px;color:var(--dim);display:grid;gap:6px}
+input,select{width:100%;padding:12px 14px;border-radius:12px;border:1px solid var(--line-2);background:#0a0c14;color:var(--txt);font:inherit;color-scheme:dark}
+input:focus,select:focus{outline:2px solid var(--brand);outline-offset:1px}
+.note{font-size:13px;color:var(--mute)}
+.final{text-align:center}.final .cta-row{justify-content:center}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--mute);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between}
+.ic{width:18px;height:18px;display:inline-block;background:currentColor;-webkit-mask:var(--wai) center/contain no-repeat;mask:var(--wai) center/contain no-repeat}
+.float{position:fixed;right:16px;bottom:16px;z-index:20;box-shadow:0 8px 30px rgba(34,197,94,.35)}
+@media(max-width:860px){.hero{grid-template-columns:1fr;padding-top:40px}.float span{display:none}.grid3,.grid2{grid-template-columns:1fr}.nav .hide-m{display:none}}
+</style></head><body>
+<header class="nav"><div class="wrap"><a class="brand" href="/">METRIX<b class="grad">AI</b></a>
+<a class="btn btn--wa btn--sm" data-wa href="https://wa.me/5511991502676?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Metrix%20AI%20e%20quero%20a%20API%20oficial%20do%20WhatsApp." target="_blank" rel="noopener"><i class="ic" aria-hidden="true"></i><span>Falar no WhatsApp</span></a></div></header>
+<main>
+<div class="wrap hero">
+ <div><span class="eyebrow">API Oficial do WhatsApp</span><h1>API Oficial do WhatsApp <span class="grad">configurada para a sua empresa.</span></h1><p>Seu WhatsApp comercial dentro das regras da Meta: número oficial, vários atendentes no mesmo número, painel com CRM e, se quiser, IA atendendo junto com o seu time.</p>
+  <div class="cta-row"><a class="btn btn--wa" data-wa href="https://wa.me/5511991502676?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Metrix%20AI%20e%20quero%20a%20API%20oficial%20do%20WhatsApp." target="_blank" rel="noopener"><i class="ic" aria-hidden="true"></i>Falar com um especialista</a><a class="btn btn--ghost" href="#form">Prefiro que me chamem</a></div></div>
+ <div class="card pain"><h3>Isso soa familiar?</h3><ul><li>Número da empresa bloqueado ou banido</li><li>Medo de cair usando API não oficial</li><li>Um celular para vários atendentes</li><li>Mensagens enviadas que não chegam</li><li>Nenhum histórico de quem atendeu quem</li></ul></div>
+</div>
+<section class="block"><div class="wrap"><h2>Como funciona, em 3 passos</h2><p class="lead">Implantação acompanhada pela Metrix, do começo ao atendimento rodando.</p><div class="grid3"><div class="card step"><b>1</b><h3>Conta oficial na Meta</h3><p>Criamos ou ajustamos o portfólio empresarial e a conta do WhatsApp Business Platform da sua empresa.</p></div><div class="card step"><b>2</b><h3>Número na API oficial</h3><p>Registramos o número, configuramos nome de exibição, perfil e os modelos de mensagem aprovados.</p></div><div class="card step"><b>3</b><h3>Time e IA atendendo</h3><p>Conectamos ao painel: vários atendentes, CRM, histórico e, se você quiser, IA qualificando e agendando.</p></div></div></div></section>
+<section class="block"><div class="wrap grid2">
+ <div><h2>O que está incluso</h2><p class="lead">O que a Metrix configura e entrega para você.</p><ul class="check"><li>Conta do WhatsApp Business Platform no portfólio da sua empresa</li><li>Registro e verificação do número</li><li>Nome de exibição e perfil comercial</li><li>Modelos de mensagem (templates) enviados para aprovação</li><li>Webhook e integração com o painel Metrix</li><li>Vários atendentes no mesmo número, com CRM</li><li>Orientação de boas práticas de envio para manter a qualidade do número</li><li>IA opcional para qualificar e agendar</li></ul></div>
+ <div class="card" id="form"><h3>Quer que um especialista te chame?</h3><p class="note">Leva 30 segundos. A conversa continua no WhatsApp.</p>
+  <form id="leadform"><label>Nome<input name="nome" required autocomplete="name"></label>
+  <label>Empresa<input name="empresa" required autocomplete="organization"></label>
+  <label>WhatsApp com DDD<input name="telefone" required inputmode="tel" autocomplete="tel" placeholder="(11) 90000-0000"></label>
+  <label>Atendimentos por mês no WhatsApp<select name="volume" required><option value="">Selecione</option><option>Até 300</option><option>300 a 1.000</option><option>1.000 a 5.000</option><option>Mais de 5.000</option></select></label>
+  <button class="btn btn--wa" type="submit"><i class="ic" aria-hidden="true"></i>Enviar e abrir o WhatsApp</button>
+  <p class="note">Seus dados são usados só para este contato. <a href="/privacidade.html" style="text-decoration:underline">Política de privacidade</a>.</p></form></div>
+</div></section>
+<section class="block"><div class="wrap"><h2>Perguntas frequentes</h2><p class="lead"></p><details><summary>Preciso apagar o WhatsApp do número?</summary><p>Sim. Para registrar o número na API oficial, ele precisa sair do aplicativo WhatsApp ou WhatsApp Business do celular. A Metrix acompanha a virada para o atendimento não parar.</p></details><details><summary>Perco meus contatos e conversas?</summary><p>O histórico do aplicativo não é migrado para a API. Os contatos continuam podendo falar com o mesmo número, e a partir da virada todo o histórico fica salvo no painel.</p></details><details><summary>A Meta cobra pelas mensagens?</summary><p>Sim. A Meta cobra por mensagem enviada com modelo (template), com valores por categoria e país. Respostas dentro da janela de atendimento aberta pelo cliente têm regras próprias. Explicamos o custo para o seu caso na conversa.</p></details><details><summary>Quanto tempo leva?</summary><p>Depende da verificação da empresa na Meta e da aprovação do nome de exibição. Com a documentação em dia, costuma levar poucos dias.</p></details><details><summary>A API oficial garante que o número nunca será bloqueado?</summary><p>Não. Ela reduz muito o risco, mas a Meta avalia a qualidade dos envios. Por isso orientamos boas práticas e o uso de modelos aprovados.</p></details><details><summary>Posso usar IA no WhatsApp oficial?</summary><p>Sim, para atendimento, vendas, qualificação e agendamento, que é o que a Metrix entrega. As regras da Meta não permitem assistentes de IA de uso geral.</p></details></div></section>
+<section class="block final"><div class="wrap"><h2>Pronto para ter um WhatsApp oficial?</h2><p class="lead" style="margin:10px auto 24px">Fale com um especialista e entenda o melhor caminho para o seu número.</p>
+<div class="cta-row"><a class="btn btn--wa" data-wa href="https://wa.me/5511991502676?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Metrix%20AI%20e%20quero%20a%20API%20oficial%20do%20WhatsApp." target="_blank" rel="noopener"><i class="ic" aria-hidden="true"></i>Falar no WhatsApp agora</a></div></div></section>
+</main>
+<footer><div class="wrap"><span>© Metrix Consultoria de Dados &amp; BI · CNPJ 56.954.775/0001-50</span><span><a href="/">Início</a> · <a href="/privacidade.html">Privacidade</a> · <a href="/termos.html">Termos</a></span></div></footer>
+<a class="btn btn--wa float" data-wa href="https://wa.me/5511991502676?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Metrix%20AI%20e%20quero%20a%20API%20oficial%20do%20WhatsApp." target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><i class="ic" aria-hidden="true"></i><span>WhatsApp</span></a>
+<script>
+(function(){
+var PAGE="api-oficial",WA="5511991502676",MSG="Olá! Vim pelo site da Metrix AI e quero a API oficial do WhatsApp.";
+var q=new URLSearchParams(location.search),keys=["gclid","gbraid","wbraid","fbclid","utm_source","utm_medium","utm_campaign","utm_term","utm_content"];
+try{keys.forEach(function(k){if(q.get(k))sessionStorage.setItem("mx_"+k,q.get(k));});}catch(e){}
+function get(k){try{return sessionStorage.getItem("mx_"+k)||q.get(k)||"";}catch(e){return q.get(k)||"";}}
+function ref(){var g=get("gclid")||get("gbraid")||get("wbraid");return g?" [ref:"+g.slice(-8)+"]":"";}
+function link(text){return "https://wa.me/"+WA+"?text="+encodeURIComponent(text+ref());}
+document.querySelectorAll("[data-wa]").forEach(function(a){
+ a.href=link(MSG);
+ a.addEventListener("click",function(){dataLayer.push({event:"clique_whatsapp",pagina:PAGE,gclid:get("gclid"),utm_campaign:get("utm_campaign")});});
+});
+document.getElementById("leadform").addEventListener("submit",function(ev){
+ ev.preventDefault();var f=new FormData(ev.target);
+ dataLayer.push({event:"envio_formulario",pagina:PAGE,volume:f.get("volume"),gclid:get("gclid"),utm_campaign:get("utm_campaign")});
+ var t=MSG+"\nNome: "+f.get("nome")+"\nEmpresa: "+f.get("empresa")+"\nTelefone: "+f.get("telefone")+"\nAtendimentos/mês: "+f.get("volume");
+ window.open(link(t),"_blank","noopener");
+});
+})();
+</script>
+</body></html>
