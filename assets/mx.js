@@ -7,6 +7,7 @@
 
   var CFG = {
     WA: "5511991502676",              // número do SDR (o mesmo para os 4 assuntos)
+    WA_EMPRESA: "89622ba0-289a-4a2c-8e79-49090b370e67", // empresa dona desse número no AI Connect: o wa-track grava o clique nela para o gatilho casar com o lead
     GTM_ID: "",                        // ex.: "GTM-XXXXXXX" — preencher para ligar o Google Tag Manager
     PIXEL_ID: "",                      // ex.: "123456789012345" — preencher para ligar o Pixel da Meta
     API: "https://orxznqmpelrtciiqltfz.supabase.co/functions/v1/",
@@ -74,6 +75,7 @@
       if (tem) {
         KEYS.forEach(function (k) { var v = q.get(k); if (v) sessionStorage.setItem("mx_" + k, v.slice(0, 200)); else sessionStorage.removeItem("mx_" + k); });
         sessionStorage.setItem("mx_landing", location.pathname);
+        sessionStorage.removeItem("mx_click");
       }
       if (!sessionStorage.getItem("mx_landing")) sessionStorage.setItem("mx_landing", location.pathname);
       if (!sessionStorage.getItem("mx_ref") && document.referrer && document.referrer.indexOf(location.host) === -1) sessionStorage.setItem("mx_ref", document.referrer.slice(0, 200));
@@ -89,7 +91,36 @@
     });
     return o;
   }
-  function refTag() { var u = utm(); var g = u.gclid || u.gbraid || u.wbraid; return g ? " [ref:" + g.slice(-8) + "]" : ""; }
+  /* Visita que veio de anúncio (tem UTM ou id de clique): registra no wa-track uma vez por sessão.
+     O código curto (#m-xxxxxx) vai no fim da mensagem do WhatsApp e o gatilho casa_clique_de_anuncio
+     copia UTM, gclid/gbraid/wbraid e a página de entrada para o lead. Sem isso, o lead do Google
+     chega no WhatsApp sem origem. Se o código ainda não voltou na hora do clique, vale o [ref:]. */
+  function clickId() { try { return sessionStorage.getItem("mx_click") || ""; } catch (e) { return ""; } }
+  (function registraClique() {
+    try {
+      var u = utm();
+      if (!KEYS.some(function (k) { return u[k]; }) || clickId() || !window.fetch) return;
+      var corpo = { company_id: CFG.WA_EMPRESA, referrer: u.ref || document.referrer || null, landing_url: location.href.split("#")[0] };
+      KEYS.forEach(function (k) { if (u[k]) corpo[k] = u[k]; });
+      fetch(CFG.API + "wa-track", { method: "POST", mode: "cors", headers: { "Content-Type": "text/plain;charset=UTF-8" }, body: JSON.stringify(corpo) })
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .then(function (j) { if (j && /^[a-z0-9]{6}$/.test(j.click_id || "")) { try { sessionStorage.setItem("mx_click", j.click_id); } catch (e) {} refazLinks(); } })
+        .catch(function () {});
+    } catch (e) {}
+  })();
+  function refTag() {
+    var c = clickId(); if (c) return " #m-" + c;
+    var u = utm(); var g = u.gclid || u.gbraid || u.wbraid; return g ? " [ref:" + g.slice(-8) + "]" : "";
+  }
+  function refazLinks() {
+    try {
+      document.querySelectorAll('a[href^="https://wa.me/' + CFG.WA + '"]').forEach(function (a) {
+        var m = /[?&]text=([^&]*)/.exec(a.getAttribute("href")); if (!m) return;
+        var t = decodeURIComponent(m[1]).replace(/ (\[ref:[^\]]*\]|#m-[a-z0-9]{6})$/, "");
+        a.setAttribute("href", waLink(t));
+      });
+    } catch (e) {}
+  }
   function waLink(text) { return "https://wa.me/" + CFG.WA + "?text=" + encodeURIComponent(text + refTag()); }
   function msgDe(assunto, extra) { var a = CFG.ASSUNTOS[assunto] || CFG.ASSUNTOS.sdr_ia; return a.msg + (extra ? " " + extra : ""); }
   function abre(url) {

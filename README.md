@@ -25,6 +25,8 @@ Ficam **fora** deste repositório e continuam no diretório extra da VPS: `/cada
 ## Configuração (topo de `assets/mx.js`)
 
 - `WA` — número do SDR que recebe os 4 assuntos do botão de WhatsApp (hoje 11 99150-2676).
+- `WA_EMPRESA` — empresa dona desse número no AI Connect (hoje a WB.P, onde está a Bea). O clique de anúncio é
+  registrado nela, porque o gatilho que casa clique e lead procura na empresa da conversa.
 - `GTM_ID` / `PIXEL_ID` — preencher para ligar o Google Tag Manager e o Pixel da Meta.
 - `LOTES` e `ADICIONAL` — só para exibição. **O preço cobrado vem da edge function `workshop-checkout`**;
   mudou lote ou preço, mude nos dois lugares.
@@ -39,7 +41,11 @@ Ficam **fora** deste repositório e continuam no diretório extra da VPS: `/cada
 - Eventos no `dataLayer`: `clique_whatsapp` (assunto, origem), `envio_formulario` (interesse), `inicio_checkout`,
   `compra_workshop` (valor, lote, participantes), `clique_testeira`, `clique_cta`.
 - Mensagens pré-preenchidas do WhatsApp começam com “Vim pelo site da Metrix AI” (gatilho do roteiro Metrix no
-  SDR) e, quando há gclid, terminam com `[ref:<8 últimos caracteres>]`.
+  SDR).
+- Visita vinda de anúncio (com UTM, gclid, gbraid, wbraid ou fbclid) é registrada uma vez por sessão na edge
+  function `wa-track`, que devolve um código curto. A mensagem do WhatsApp termina com `#m-<código>` e o gatilho
+  `metrix.casa_clique_de_anuncio` copia UTM, ids de clique e página de entrada para o lead. Se o código ainda não
+  voltou na hora do clique, a mensagem termina com `[ref:<8 últimos caracteres do gclid>]`.
 
 ## Conferência rápida
 
