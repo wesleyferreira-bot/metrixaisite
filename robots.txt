@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /_build/
-Disallow: /workshop-ia/obrigado/
-Sitemap: https://ai.metrixconsultoria.com/sitemap.xml

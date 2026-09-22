@@ -7,14 +7,13 @@
   var nav = document.getElementById("nav");
   var burger = document.getElementById("burger");
   function onScroll() {
-    if (!nav) return;
     if (window.scrollY > 12) nav.classList.add("scrolled");
     else nav.classList.remove("scrolled");
   }
   window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
 
-  if (burger && nav) {
+  if (burger) {
     burger.addEventListener("click", function () {
       var open = nav.classList.toggle("open");
       burger.setAttribute("aria-expanded", String(open));
