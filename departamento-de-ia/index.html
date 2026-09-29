@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Departamento de IA para empresas | Metrix AI</title>
+<meta name="description" content="Dados em um só lugar, IAs conectadas aos seus sistemas, automações rodando e relatórios pedidos por mensagem. Financeiro, RH, vendas e marketing." />
+<link rel="canonical" href="https://ai.metrixconsultoria.com/departamento-de-ia/" />
+<meta name="theme-color" content="#05060a" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="pt_BR" />
+<meta property="og:site_name" content="Metrix AI" />
+<meta property="og:title" content="Um Departamento de IA inteiro, sem montar um do zero" />
+<meta property="og:description" content="Dados em um só lugar, IAs conectadas aos seus sistemas, automações rodando e relatórios pedidos por mensagem. Financeiro, RH, vendas e marketing." />
+<meta property="og:url" content="https://ai.metrixconsultoria.com/departamento-de-ia/" />
+<meta property="og:image" content="https://orxznqmpelrtciiqltfz.supabase.co/storage/v1/object/public/site-publico/og/departamento.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="icon" type="image/png" href="data:image/png;base64,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" />
+<link rel="stylesheet" href="/styles.css?v=202609211748" />
+<link rel="stylesheet" href="/assets/mx.css?v=202609211748" />
+<script>window.dataLayer=window.dataLayer||[];</script>
+</head>
+<body data-mx-page="departamento-ia" data-mx-interesse="departamento_ia">
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-glow bg-glow--a" aria-hidden="true"></div>
+<div class="bg-glow bg-glow--b" aria-hidden="true"></div>
+<div class="mx-topbar" id="mx-topbar" hidden></div>
+<header class="nav" id="nav">
+  <a class="brand" href="/" aria-label="Metrix AI — início">
+    <span class="mx-logo" aria-hidden="true"></span>
+    <span class="brand__text">METRIX<span class="brand__ai">AI</span></span>
+  </a>
+  <nav class="nav__links" aria-label="Navegação principal">
+    <a href="/sdr-ia/">Atendimento &amp; SDR IA</a>
+    <a href="/departamento-de-ia/" aria-current="page">Departamento de IA</a>
+    <a href="/workshop-ia/" class="mx-nav-hot">Workshop 27/10</a>
+    <a href="/sdr-ia/#planos">Planos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+  <a class="btn btn--primary btn--sm nav__cta" href="#contato" data-mx-wa-open>Falar com a Metrix</a>
+  <button class="nav__burger" id="burger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</header>
+
+<main id="top">
+
+  <section class="hero" id="hero">
+    <div class="hero__copy reveal">
+      <span class="eyebrow">Departamento de IA</span>
+      <h1 class="hero__title hero__title--md">Um Departamento de IA inteiro, <span class="grad">sem montar um do zero.</span></h1>
+      <p class="hero__sub">Juntamos os dados da sua empresa em um só lugar, <strong>conectamos IAs aos seus sistemas</strong>, colocamos os processos no automático e você pede relatórios e informações por mensagem. Financeiro, RH, vendas, marketing e operação.</p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#contato" data-mx-wa="departamento_ia" data-mx-origem="depto-hero" data-mx-extra="Quero um diagnóstico.">Quero um diagnóstico</a>
+        <a class="btn btn--ghost" href="#camadas" data-mx-evt="depto-hero-camadas"><span class="play" aria-hidden="true">▶</span>Ver as 4 camadas</a>
+      </div>
+      <ul class="hero__pills"><li>Data Lake</li><li>IAs conectadas</li><li>Automações</li><li>Relatórios por mensagem</li><li>BI</li><li>APIs</li></ul>
+    </div>
+
+    <!-- Animação: Lead → SDR → CRM → ... → CEO -->
+    <div class="hero__flow reveal" aria-label="Fluxo: do lead ao CEO, tudo conectado">
+      <div class="flow">
+        <div class="flow__node" data-i="0"><span class="flow__ico">👋</span><span class="flow__lbl">Lead</span></div>
+        <div class="flow__link"><span class="flow__pulse"></span></div>
+        <div class="flow__node flow__node--star" data-i="1"><span class="flow__ico">🤖</span><span class="flow__lbl">SDR Agent</span></div>
+        <div class="flow__link"><span class="flow__pulse"></span></div>
+        <div class="flow__node" data-i="2"><span class="flow__ico">🗂️</span><span class="flow__lbl">CRM</span></div>
+        <div class="flow__link"><span class="flow__pulse"></span></div>
+        <div class="flow__node" data-i="3"><span class="flow__ico">💰</span><span class="flow__lbl">Financeiro</span></div>
+        <div class="flow__link"><span class="flow__pulse"></span></div>
+        <div class="flow__node" data-i="4"><span class="flow__ico">📦</span><span class="flow__lbl">ERP</span></div>
+        <div class="flow__link"><span class="flow__pulse"></span></div>
+        <div class="flow__node" data-i="5"><span class="flow__ico">⚙️</span><span class="flow__lbl">Operação</span></div>
+        <div class="flow__link"><span class="flow__pulse"></span></div>
+        <div class="flow__node" data-i="6"><span class="flow__ico">📊</span><span class="flow__lbl">Dashboard</span></div>
+        <div class="flow__link"><span class="flow__pulse"></span></div>
+        <div class="flow__node flow__node--ceo" data-i="7"><span class="flow__ico">🧠</span><span class="flow__lbl">CEO pergunta à IA</span></div>
+      </div>
+      <p class="flow__caption">Tudo conectado. Do primeiro contato à decisão do CEO.</p>
+    </div>
+  </section>
+
+  <section class="section" id="camadas">
+    <div class="section__head reveal">
+      <span class="eyebrow">Como é por dentro</span>
+      <h2 class="section__title">As 4 camadas do Departamento de IA</h2>
+      <p class="section__lead">Cada camada se apoia na de baixo. É por isso que a IA acerta: ela trabalha em cima dos dados reais da sua empresa, não de achismo.</p>
+    </div>
+    <div class="mx-layers">
+      <div class="mx-stack reveal" data-mx-layers>
+        <button type="button" class="mx-layer" data-l="1" aria-pressed="false"><span class="mx-layer__n">1</span><div><h3>Dados</h3><p>Tudo organizado em um lugar só</p></div></button>
+        <button type="button" class="mx-layer" data-l="2" aria-pressed="false"><span class="mx-layer__n">2</span><div><h3>IAs conectadas</h3><p>Especialistas que leem os seus dados</p></div></button>
+        <button type="button" class="mx-layer" data-l="3" aria-pressed="false"><span class="mx-layer__n">3</span><div><h3>Automações</h3><p>Processos rodando sozinhos</p></div></button>
+        <button type="button" class="mx-layer" data-l="4" aria-pressed="false"><span class="mx-layer__n">4</span><div><h3>Pedidos e conversas</h3><p>Você pede, a IA responde e faz</p></div></button>
+      </div>
+      <div class="mx-layer-detail reveal" data-mx-layer-detail aria-live="polite"></div>
+    </div>
+    <template id="mx-layer-1"><span class="mx-kicker">Camada 1</span><h3>Dados: tudo organizado em um lugar só</h3><p>Criamos o Data Lake da empresa e ligamos as fontes: ERP, CRM, financeiro, mídia paga, atendimento e planilhas. Dado limpo, com dono e atualizado sozinho.</p><ul class="mx-chips"><li>ERP e financeiro</li><li>CRM</li><li>Google e Meta Ads</li><li>WhatsApp e atendimento</li><li>Planilhas</li><li>BigQuery</li></ul></template>
+    <template id="mx-layer-2"><span class="mx-kicker">Camada 2</span><h3>IAs conectadas: especialistas por área</h3><p>Agentes de IA que leem esses dados e entendem o seu negócio: um analista financeiro, um comercial, um de marketing, um de RH. Cada um com as regras e os limites que você define.</p><ul class="mx-chips"><li>Analista financeiro</li><li>Comercial</li><li>Marketing</li><li>RH</li><li>Analista de dados</li></ul></template>
+    <template id="mx-layer-3"><span class="mx-kicker">Camada 3</span><h3>Automações: o manual vira automático</h3><p>Relatórios que se montam sozinhos, conciliação, cobrança, follow-up de propostas, integração entre sistemas e alertas antes do problema acontecer.</p><ul class="mx-chips"><li>Relatórios</li><li>Conciliação</li><li>Cobrança</li><li>Follow-up</li><li>Integrações</li><li>Alertas</li></ul></template>
+    <template id="mx-layer-4"><span class="mx-kicker">Camada 4</span><h3>Pedidos e conversas: você pede, a IA entrega</h3><p>Pergunte pelo WhatsApp ou no painel: “quanto vendemos ontem?”, “manda o DRE do mês”, “quem está atrasado?”. A resposta vem com o número, o relatório ou a tarefa feita.</p><ul class="mx-chips"><li>WhatsApp</li><li>Painel</li><li>Dashboards</li><li>Relatórios sob demanda</li></ul></template>
+  </section>
+
+  <section class="section section--alt" id="antes-depois">
+    <div class="section__head reveal">
+      <span class="eyebrow">A diferença</span>
+      <h2 class="section__title">Não é mais um sistema. É um departamento.</h2>
+      <p class="section__lead">Ferramenta solta cria mais trabalho. Um departamento resolve.</p>
+    </div>
+    <div class="compare reveal">
+      <div class="compare__card compare__card--bad">
+        <h3>Hoje</h3>
+        <ul>
+          <li>Dados espalhados em sistemas e planilhas</li>
+          <li>Relatório montado à mão toda semana</li>
+          <li>Sistemas que não conversam entre si</li>
+          <li>Decisão tomada no achismo</li>
+          <li>Time preso em retrabalho</li>
+        </ul>
+      </div>
+      <div class="compare__vs" aria-hidden="true">vs</div>
+      <div class="compare__card compare__card--good">
+        <h3>Com o Departamento de IA</h3>
+        <ul>
+          <li>Dados em um lugar só, atualizados</li>
+          <li>Relatórios prontos e pedidos por mensagem</li>
+          <li>Sistemas integrados por API</li>
+          <li>Alertas antes do problema</li>
+          <li>Time focado no que dá resultado</li>
+          <li>IA que aprende com a sua operação</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="areas">
+    <div class="section__head reveal">
+      <span class="eyebrow">Por área</span>
+      <h2 class="section__title">O que dá para automatizar na sua empresa</h2>
+      <p class="section__lead">Alguns exemplos. No diagnóstico, mapeamos o que dá mais retorno no seu caso.</p>
+    </div>
+    <div class="mx-grid mx-grid--3">
+      <div class="mx-card reveal"><h3>Financeiro</h3><ul class="mx-list"><li>Conciliação e contas a pagar e receber</li><li>DRE e fluxo de caixa sem planilha manual</li><li>Cobrança e aviso de atraso automáticos</li></ul></div>
+      <div class="mx-card reveal"><h3>RH</h3><ul class="mx-list"><li>Triagem de currículos e agendamento de entrevistas</li><li>Dúvidas de colaboradores respondidas na hora</li><li>Onboarding com checklist automático</li></ul></div>
+      <div class="mx-card reveal"><h3>Vendas</h3><ul class="mx-list"><li>SDR com IA que qualifica e agenda</li><li>CRM atualizado sozinho, sem digitação</li><li>Follow-up de propostas e previsão de vendas</li></ul></div>
+      <div class="mx-card reveal"><h3>Marketing</h3><ul class="mx-list"><li>Atribuição do anúncio à venda</li><li>Relatórios de campanha automáticos</li><li>Conteúdo e redes sociais com IA</li></ul></div>
+      <div class="mx-card reveal"><h3>Operação</h3><ul class="mx-list"><li>Pedidos, estoque e prazos integrados</li><li>Alertas de gargalo e atraso</li><li>Rotinas repetitivas rodando sozinhas</li></ul></div>
+      <div class="mx-card reveal"><h3>Diretoria</h3><ul class="mx-list"><li>Painel com os números que importam</li><li>Perguntas respondidas pelo WhatsApp</li><li>Relatório executivo toda segunda-feira</li></ul></div>
+    </div>
+  </section>
+
+  <!-- ============ COMO FUNCIONA (cena viva) ============ -->
+  <section class="section section--alt" id="como">
+    <div class="section__head reveal">
+      <span class="eyebrow">Em cinco passos, ao vivo</span>
+      <h2 class="section__title">Como funciona</h2>
+      <p class="section__lead">
+        Isso é o que acontece, em tempo real, toda vez que um lead chega.
+        Clique numa etapa ou só assista.
+      </p>
+    </div>
+    <div class="hiw reveal">
+      <ol class="hiw__steps" aria-label="Etapas do processo">
+        <li class="hiw-step">
+          <button class="hiw-step__btn" type="button">
+            <span class="hiw-step__n">1</span>
+            <span class="hiw-step__txt"><strong>Recebe</strong><em>Entra por qualquer canal, sem perder contexto.</em></span>
+          </button>
+          <div class="hiw-step__extra"><ul class="tags">
+            <li>WhatsApp</li><li>Instagram</li><li>Site</li><li>Telefone</li><li>Email</li><li>API</li>
+          </ul></div>
+          <span class="hiw-step__bar"><span></span></span>
+        </li>
+        <li class="hiw-step">
+          <button class="hiw-step__btn" type="button">
+            <span class="hiw-step__n">2</span>
+            <span class="hiw-step__txt"><strong>Entende</strong><em>Consulta tudo e enriquece antes de responder.</em></span>
+          </button>
+          <div class="hiw-step__extra"><ul class="tags">
+            <li>Consulta CRM</li><li>Consulta ERP</li><li>Histórico</li><li>Documentos</li><li>Data Lake</li><li>Enriquece dados</li>
+          </ul></div>
+          <span class="hiw-step__bar"><span></span></span>
+        </li>
+        <li class="hiw-step">
+          <button class="hiw-step__btn" type="button">
+            <span class="hiw-step__n">3</span>
+            <span class="hiw-step__txt"><strong>Negocia</strong><em>Conversa como gente, com objetivo claro.</em></span>
+          </button>
+          <div class="hiw-step__extra"><ul class="tags">
+            <li>Conversa naturalmente</li><li>Quebra objeções</li><li>Qualifica</li><li>Agenda</li><li>Vende</li>
+          </ul></div>
+          <span class="hiw-step__bar"><span></span></span>
+        </li>
+        <li class="hiw-step">
+          <button class="hiw-step__btn" type="button">
+            <span class="hiw-step__n">4</span>
+            <span class="hiw-step__txt"><strong>Executa</strong><em>Age nos seus sistemas, não só responde.</em></span>
+          </button>
+          <div class="hiw-step__extra"><ul class="tags">
+            <li>Cria pedido</li><li>Atualiza CRM</li><li>Emite proposta</li><li>Abre chamado</li><li>Envia contrato</li><li>Integra APIs</li>
+          </ul></div>
+          <span class="hiw-step__bar"><span></span></span>
+        </li>
+        <li class="hiw-step">
+          <button class="hiw-step__btn" type="button">
+            <span class="hiw-step__n">5</span>
+            <span class="hiw-step__txt"><strong>Aprende</strong><em>Cada interação vira inteligência de gestão.</em></span>
+          </button>
+          <div class="hiw-step__extra"><ul class="tags">
+            <li>Atualiza dashboards</li><li>Gera alertas</li><li>Cria relatórios</li><li>Entrega insights</li>
+          </ul></div>
+          <span class="hiw-step__bar"><span></span></span>
+        </li>
+      </ol>
+
+      <div class="hiw__stage" id="hiwStage">
+        <svg viewBox="0 0 720 540" role="img"
+          aria-label="Animação: canais enviando leads para o núcleo Metrix AI, que consulta sistemas, negocia, executa e aprende"></svg>
+
+        <div class="hiw-chat" id="hiwChat" aria-hidden="true"></div>
+        <div class="hiw-exec" id="hiwExec" aria-hidden="true"></div>
+
+        <div class="hiw-learn" id="hiwLearn" aria-hidden="true">
+          <h4>Inteligência de gestão</h4>
+          <div class="hiw-bars">
+            <span style="--h:72%"></span><span style="--h:48%"></span><span style="--h:86%"></span>
+            <span style="--h:60%"></span><span style="--h:95%"></span>
+          </div>
+          <div class="hiw-kpis"><b class="up">Conversão +18%</b><b class="down">CAC −23%</b></div>
+          <div class="hiw-alert">⚠️ 12 leads parados na etapa Proposta</div>
+          <div class="hiw-alert">📈 Relatório semanal pronto às 8h</div>
+        </div>
+
+        <p class="hiw__caption">
+          <strong id="hiwCapT">1 · Recebe — o lead entra por qualquer canal</strong>
+          <span id="hiwCapS">Tudo começa com uma conversa.</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section" id="calculadora">
+    <div class="section__head reveal">
+      <span class="eyebrow">Calculadora</span>
+      <h2 class="section__title">Quanto custa o trabalho manual hoje?</h2>
+      <p class="section__lead">Coloque os números da sua empresa. É o custo de deixar tudo como está.</p>
+    </div>
+    <div class="mx-calc reveal" data-mx-calc>
+      <div class="mx-calc__in">
+        <label class="mx-field">Pessoas fazendo tarefas repetitivas (relatórios, digitação, conferência)<input class="mx-input" id="calcPessoas" type="number" min="0" step="1" value="3" inputmode="numeric" /></label>
+        <label class="mx-field">Horas por semana que cada uma gasta nisso<input class="mx-input" id="calcHoras" type="number" min="0" step="1" value="10" inputmode="numeric" /></label>
+        <label class="mx-field">Custo médio por hora, com encargos (R$)<input class="mx-input" id="calcCusto" type="number" min="0" step="1" value="45" inputmode="decimal" /></label>
+      </div>
+      <div class="mx-calc__out">
+        <small>Hoje, o trabalho manual custa</small>
+        <div class="mx-calc__big" data-calc-mes>R$ 0</div>
+        <div class="mx-calc__sub"><span data-calc-ano></span> · <span data-calc-horas></span></div>
+        <p class="mx-small" style="margin:0 0 16px">Cálculo com os números que você digitou (4,33 semanas por mês). No diagnóstico, mostramos quanto disso dá para automatizar.</p>
+        <a class="btn btn--primary" href="#contato" data-mx-wa="departamento_ia" data-mx-origem="calculadora" data-mx-extra="Fiz a conta na calculadora e quero um diagnóstico." data-calc-cta>Quero um diagnóstico</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ECONOMIA ============ -->
+  <section class="section economy" id="economia">
+    <div class="economy__inner reveal">
+      <span class="eyebrow">O que quase ninguém fala</span>
+      <h2 class="economy__title">O lucro está escondido na <span class="grad">operação.</span></h2>
+      <div class="economy__text">
+        <p>A maioria das empresas tenta vender mais. Poucas percebem quanto dinheiro
+        perdem todos os dias com retrabalho, atendimento lento, processos manuais,
+        erros operacionais e falta de integração.</p>
+        <p>Nosso objetivo não é apenas aumentar faturamento. <strong>É aumentar margem.</strong></p>
+        <p class="economy__punch">
+          Economizar <span class="grad">R$ 100 mil por mês</span> gera exatamente o mesmo
+          impacto financeiro que vender centenas de milhares de reais a mais.
+        </p>
+      </div>
+      <div class="economy__scale">
+        <div class="economy__side">
+          <span class="economy__big">+ Faturamento</span>
+          <span class="economy__meta">Custa CAC, mídia, time comercial</span>
+        </div>
+        <div class="economy__eq">=</div>
+        <div class="economy__side economy__side--win">
+          <span class="economy__big">− Custos</span>
+          <span class="economy__meta">Margem direta, todo mês, sem gastar mais</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INFRAESTRUTURA / CORE ============ -->
+  <section class="section" id="core">
+    <div class="section__head reveal">
+      <span class="eyebrow">A infraestrutura invisível</span>
+      <h2 class="section__title">Metrix AI Core</h2>
+      <p class="section__lead">
+        Data Lake, Web Analytics, APIs e BI deixam de ser o produto.
+        Passam a ser a infraestrutura que torna os agentes inteligentes.
+      </p>
+    </div>
+    <div class="core reveal" aria-label="Metrix AI Core conectado a todos os sistemas">
+      <div class="core__center">
+        <span class="core__title">METRIX</span>
+        <span class="core__sub">AI CORE</span>
+      </div>
+      <div class="core__ring core__ring--1"></div>
+      <div class="core__ring core__ring--2"></div>
+      <div class="core__orbit" id="coreOrbit"><!-- nós injetados via JS --></div>
+    </div>
+    <p class="core__caption reveal">Tudo aponta para o Core. E tudo volta com inteligência.</p>
+  </section>
+
+
+  <section class="section section--alt" id="como-entregamos">
+    <div class="section__head reveal">
+      <span class="eyebrow">Como entregamos</span>
+      <h2 class="section__title">Do diagnóstico à empresa funcionando com IA</h2>
+    </div>
+    <div class="mx-steps reveal">
+      <div class="mx-step"><h3>Diagnóstico</h3><p>Mapeamos sistemas, dados, processos e custos. Você vê onde a IA dá mais retorno.</p></div>
+      <div class="mx-step"><h3>Dados e integrações</h3><p>Data Lake criado e sistemas conectados, com governança desde o começo.</p></div>
+      <div class="mx-step"><h3>Agentes e automações</h3><p>As IAs e as rotinas automáticas entram por área, começando pela de maior ganho.</p></div>
+      <div class="mx-step"><h3>Painel e pedidos</h3><p>Dashboards e perguntas pelo WhatsApp para a diretoria e os gestores.</p></div>
+      <div class="mx-step"><h3>Evolução contínua</h3><p>Acompanhamento mensal: novos agentes, novas automações, mais economia.</p></div>
+    </div>
+  </section>
+
+  <!-- ============ SOLUÇÕES QUE ENTREGAMOS ============ -->
+  <section class="section" id="entregas">
+    <div class="section__head reveal">
+      <span class="eyebrow">Na prática</span>
+      <h2 class="section__title">Soluções que entregamos</h2>
+      <p class="section__lead">
+        Frente a frente, o que colocamos de pé na sua operação — da conversa
+        com o cliente ao relatório na mesa da diretoria.
+      </p>
+    </div>
+    <div class="deliv">
+      <article class="deliv__row reveal">
+        <div class="deliv__head">
+          <span class="deliv__num">01</span>
+          <h3>Atendimento e vendas com IA</h3>
+        </div>
+        <div class="deliv__body">
+          <p>O SDR Agent conversa, qualifica e vende nos seus canais, com CRM incluso na plataforma.</p>
+          <ul class="deliv__list">
+            <li>Atendimento 24/7 no WhatsApp, Instagram, site, telefone e email</li>
+            <li>Qualificação, quebra de objeções, agendamento e fechamento</li>
+            <li>CRM atualizado automaticamente: funil, campos e histórico</li>
+          </ul>
+        </div>
+      </article>
+      <article class="deliv__row reveal">
+        <div class="deliv__head">
+          <span class="deliv__num">02</span>
+          <h3>Integrações e automação</h3>
+        </div>
+        <div class="deliv__body">
+          <p>Seus sistemas conversando entre si e as rotinas rodando sozinhas, sob medida.</p>
+          <ul class="deliv__list">
+            <li>Integração entre APIs, ERP, CRM, financeiro e planilhas</li>
+            <li>Tarefas, relatórios e processos no automático</li>
+            <li>Sistemas e plataformas digitais construídos pra sua operação</li>
+          </ul>
+        </div>
+      </article>
+      <article class="deliv__row reveal">
+        <div class="deliv__head">
+          <span class="deliv__num">03</span>
+          <h3>Web Analytics</h3>
+        </div>
+        <div class="deliv__body">
+          <p>Medição estruturada, configurada e funcionando — números que batem com a realidade.</p>
+          <ul class="deliv__list">
+            <li>GA4 implantado do zero ou auditado e corrigido</li>
+            <li>Tags, eventos e conversões configurados</li>
+            <li>Funis e métricas confiáveis pra decidir</li>
+          </ul>
+        </div>
+      </article>
+      <article class="deliv__row reveal">
+        <div class="deliv__head">
+          <span class="deliv__num">04</span>
+          <h3>Atribuição</h3>
+        </div>
+        <div class="deliv__body">
+          <p>De onde veio o lead, a venda e o resultado — sem achismo.</p>
+          <ul class="deliv__list">
+            <li>Google, Meta e UTMs padronizados de ponta a ponta</li>
+            <li>Server side e CAPI implementados</li>
+            <li>ROI por canal e por campanha</li>
+          </ul>
+        </div>
+      </article>
+      <article class="deliv__row reveal">
+        <div class="deliv__head">
+          <span class="deliv__num">05</span>
+          <h3>Banco de dados e Data Lake</h3>
+        </div>
+        <div class="deliv__body">
+          <p>A base que sustenta os agentes e os dashboards, criada e estruturada por nós.</p>
+          <ul class="deliv__list">
+            <li>Criação, configuração e estruturação do Data Lake</li>
+            <li>Unificação de fontes: CRM, ERP, mídia, planilhas</li>
+            <li>Governança: dado limpo, organizado e acessível</li>
+          </ul>
+        </div>
+      </article>
+      <article class="deliv__row reveal">
+        <div class="deliv__head">
+          <span class="deliv__num">06</span>
+          <h3>BI e inteligência executiva</h3>
+        </div>
+        <div class="deliv__body">
+          <p>Números prontos pra decisão, e uma IA que responde à diretoria na hora.</p>
+          <ul class="deliv__list">
+            <li>Dashboards e KPIs por área</li>
+            <li>Alertas e insights automáticos</li>
+            <li>Relatórios executivos, previsões e tendências sob demanda</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+
+  <section class="section" id="perguntas">
+    <div class="section__head reveal"><span class="eyebrow">Perguntas frequentes</span><h2 class="section__title">Sobre o Departamento de IA</h2></div>
+    <div class="mx-faq reveal">
+      <details><summary>Preciso trocar os sistemas que já uso?</summary><p>Não. Conectamos o que você já tem por API. Se algum sistema não tiver API, avaliamos a melhor forma de trazer os dados no diagnóstico.</p></details>
+      <details><summary>Quanto custa?</summary><p>Depende de quantas fontes de dados, áreas e automações entram. O diagnóstico define o escopo e o investimento, com implantação e mensalidade.</p></details>
+      <details><summary>Meus dados ficam seguros?</summary><p>Os dados ficam em ambiente separado por empresa, com acesso controlado, e são usados só para o seu Departamento de IA, de acordo com a LGPD.</p></details>
+      <details><summary>Qual IA vocês usam?</summary><p>Usamos os melhores modelos do mercado, como Claude e GPT, escolhidos por tarefa. Você não fica preso a um fornecedor.</p></details>
+      <details><summary>Por onde começar?</summary><p>Pelo diagnóstico. Em geral a primeira entrega é o Data Lake com um painel e um agente na área de maior retorno, e daí expandimos.</p></details>
+    </div>
+  </section>
+
+  <section class="section" id="contato">
+    <div class="mx-contact">
+      <div class="reveal">
+        <span class="eyebrow">Fale com a gente</span>
+        <h2 class="section__title">Por onde começar na sua empresa?</h2>
+        <p class="section__lead">Conte como funciona a sua operação hoje. No diagnóstico, mostramos onde a IA dá mais retorno primeiro.</p>
+        <ul class="mx-list mx-list--light" style="margin-top:22px">
+          <li>Resposta em segundos pelo WhatsApp, 24 horas</li>
+          <li>Diagnóstico sem compromisso</li>
+          <li>Seus dados usados só para este contato</li>
+        </ul>
+        <div class="mx-actions" style="margin-top:26px">
+          <a class="btn btn--wa" href="#contato" data-mx-wa="departamento_ia" data-mx-origem="contato"><i class="mx-ic mx-ic--wa" aria-hidden="true"></i>Chamar no WhatsApp</a>
+        </div>
+      </div>
+      <div class="mx-form-card reveal">
+        <h3>Prefere que a gente chame você?</h3>
+        <p class="mx-small">Leva 30 segundos. A conversa continua no WhatsApp.</p>
+        <form class="mx-form" data-mx-form="departamento-ia" novalidate>
+          <label class="mx-field">Sobre o que você quer falar?
+            <select class="mx-select" name="interesse" required>
+            <option value="sdr_ia">Atendimento e SDR com IA</option>
+            <option value="departamento_ia" selected>Departamento de IA</option>
+            <option value="workshop">Workshop de IA — 27/10</option>
+            <option value="suporte">Já sou cliente — suporte</option>
+            </select>
+          </label>
+          <div class="mx-row">
+            <label class="mx-field">Nome<input class="mx-input" name="nome" autocomplete="name" required /></label>
+            <label class="mx-field">Empresa<input class="mx-input" name="empresa" autocomplete="organization" /></label>
+          </div>
+          <div class="mx-row">
+            <label class="mx-field">WhatsApp com DDD<input class="mx-input" name="whatsapp" inputmode="tel" autocomplete="tel" placeholder="(11) 90000-0000" required /></label>
+            <label class="mx-field"><span>E-mail <em>(opcional)</em></span><input class="mx-input" name="email" type="email" autocomplete="email" /></label>
+          </div>
+          <label class="mx-field"><span>Mensagem <em>(opcional)</em></span><textarea class="mx-textarea" name="mensagem" rows="3" placeholder="Conte rapidamente o que você precisa"></textarea></label>
+          <div class="mx-hp" aria-hidden="true"><label>Não preencha<input name="website" tabindex="-1" autocomplete="off" /></label></div>
+          <button class="btn btn--primary" type="submit">Enviar e abrir o WhatsApp</button>
+          <div class="mx-form__msg" role="status" aria-live="polite"></div>
+          <p class="mx-small">Seus dados são usados só para este contato. <a href="/privacidade.html">Política de privacidade</a>.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__brandcol">
+    <a class="brand" href="/" aria-label="Metrix AI"><span class="mx-logo" aria-hidden="true"></span><span class="brand__text">METRIX<span class="brand__ai">AI</span></span></a>
+    <p class="footer__tag">Atendimento, vendas e operação com inteligência artificial.</p>
+    <p class="mx-foot-legal">Metrix Consultoria Ltda · CNPJ 56.954.775/0001-50<br />Alameda Terracota, 185, sala 708 · Cerâmica · São Caetano do Sul/SP</p>
+  </div>
+  <div>
+    <div class="mx-foot-links">
+      <a href="/sdr-ia/">Atendimento &amp; SDR IA</a>
+      <a href="/departamento-de-ia/">Departamento de IA</a>
+      <a href="/workshop-ia/">Workshop de IA</a>
+      <a href="/api-oficial/">API oficial do WhatsApp</a>
+      <a href="/sdr-ia/#planos">Planos</a>
+      <a href="https://painel.ai.metrixconsultoria.com" rel="noopener">Entrar no painel</a>
+    </div>
+    <div class="footer__slogans" style="margin-top:22px">
+      <span>Conectamos negócios através de inteligência artificial.</span>
+      <span>Transformamos dados em decisões e decisões em lucro.</span>
+    </div>
+  </div>
+  <div class="footer__legal">
+    <span>© 2026 Metrix AI</span>
+    <span class="mx-foot-links"><a href="/privacidade.html">Privacidade</a><a href="/termos.html">Termos</a><a href="/exclusao-de-dados.html">Exclusão de dados</a></span>
+  </div>
+</footer>
+<script src="/script.js?v=202609211748" defer></script>
+<script src="/assets/mx.js?v=202609211748" defer></script>
+</body>
+</html>
