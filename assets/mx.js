@@ -277,19 +277,54 @@
         marca(f, []);
         var payload = { interesse: d.interesse, nome: d.nome, empresa: d.empresa || "", whatsapp: dig, email: d.email || "",
           mensagem: d.mensagem || "", volume: d.volume || "", pagina: pagina, website: d.website || "", utm: utm() };
-        try {
-          fetch(CFG.API + "site-lead", { method: "POST", mode: "cors", keepalive: true,
-            headers: { "Content-Type": "text/plain;charset=UTF-8" }, body: JSON.stringify(payload) }).catch(function () {});
-        } catch (e) {}
-        track("envio_formulario", { interesse: d.interesse });
+        if (f.getAttribute("data-mx-submitting") === "true") return;
+        f.setAttribute("data-mx-submitting", "true");
+        var submit = f.querySelector('button[type="submit"]');
+        var wasDisabled = submit ? submit.disabled : false;
+        if (submit) submit.disabled = true;
+        out.className = "mx-form__msg";
+        out.textContent = "Registrando seus dados…";
         var linhas = [msgDe(d.interesse), "Nome: " + d.nome];
         if (d.empresa) linhas.push("Empresa: " + d.empresa);
         if (d.volume) linhas.push("Atendimentos por mês: " + d.volume);
         if (d.mensagem) linhas.push("Mensagem: " + d.mensagem);
         var url = waLink(linhas.join("\n"));
-        out.className = "mx-form__msg ok";
-        out.innerHTML = "Recebemos seus dados. A conversa abriu no WhatsApp — é só enviar a mensagem. Não abriu? <a href='" + url + "' target='_blank' rel='noopener'>Clique aqui</a>.";
-        abre(url);
+        function linkWhatsApp(label) {
+          var a = document.createElement("a");
+          a.href = url; a.target = "_blank"; a.rel = "noopener"; a.textContent = label;
+          a.addEventListener("click", function () {
+            track("clique_whatsapp", { assunto: d.interesse, origem: "formulario" });
+          });
+          out.appendChild(a);
+        }
+        function libera() {
+          f.removeAttribute("data-mx-submitting");
+          if (submit) submit.disabled = wasDisabled;
+        }
+        Promise.resolve().then(function () {
+          return fetch(CFG.API + "site-lead", { method: "POST", mode: "cors", keepalive: true,
+            headers: { "Content-Type": "text/plain;charset=UTF-8" }, body: JSON.stringify(payload) });
+        }).then(function (r) {
+          return r.json().then(function (j) {
+            if (!r.ok || !j || j.ok !== true || typeof j.id !== "string" || !j.id) {
+              throw { status: r.status, campos: j && j.campos };
+            }
+            return j;
+          });
+        }).then(function () {
+          track("envio_formulario", { interesse: d.interesse });
+          out.className = "mx-form__msg ok";
+          out.textContent = "Seus dados foram registrados. Continue a conversa no WhatsApp: ";
+          linkWhatsApp("abrir conversa");
+          abre(url);
+        }).catch(function (err) {
+          out.className = "mx-form__msg err";
+          out.textContent = err && err.status === 429
+            ? "Não foi possível registrar outro envio agora. "
+            : "Não conseguimos confirmar o registro dos seus dados. Tente novamente ou ";
+          if (err && Array.isArray(err.campos)) marca(f, err.campos);
+          linkWhatsApp("fale conosco pelo WhatsApp");
+        }).then(libera, libera);
       });
     });
   }
