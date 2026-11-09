@@ -8,7 +8,7 @@
   var CFG = {
     WA: "5511991502676",              // número do SDR (o mesmo para os 4 assuntos)
     WA_EMPRESA: "89622ba0-289a-4a2c-8e79-49090b370e67", // empresa dona desse número no AI Connect: o wa-track grava o clique nela para o gatilho casar com o lead
-    GTM_ID: "",                        // ex.: "GTM-XXXXXXX" — preencher para ligar o Google Tag Manager
+    GTM_ID: "GTM-MBS9Z68W",            // contêiner "ai.metrixconsultoria.com" na conta Metrix AI
     PIXEL_ID: "",                      // ex.: "123456789012345" — preencher para ligar o Pixel da Meta
     API: "https://orxznqmpelrtciiqltfz.supabase.co/functions/v1/",
     EVENTO_INICIO: "2026-10-27T09:00:00-03:00",
