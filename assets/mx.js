@@ -23,9 +23,10 @@
       sdr_ia:          { ico: "💬", rotulo: "Atendimento e SDR com IA", desc: "IA que atende, qualifica e agenda", msg: "Olá! Vim pelo site da Metrix AI e quero conhecer o SDR com IA." },
       departamento_ia: { ico: "🧠", rotulo: "Departamento de IA", desc: "Dados, IAs, automações e relatórios", msg: "Olá! Vim pelo site da Metrix AI e quero saber sobre o Departamento de IA." },
       workshop:        { ico: "🎟️", rotulo: "Workshop de IA — 27/10", desc: "Inscrições, lotes e programação", msg: "Olá! Vim pelo site da Metrix AI e quero saber sobre o Workshop de IA de 27/10." },
+      academy:         { ico: "🎓", rotulo: "Metrix Academy", desc: "Cursos e formação em IA aplicada", msg: "Olá! Vim pelo site da Metrix AI e quero saber sobre a Metrix Academy." },
       suporte:         { ico: "🛟", rotulo: "Já sou cliente — suporte", desc: "Ajuda com a plataforma ou o seu agente", msg: "Olá! Sou cliente da Metrix AI e preciso de suporte." }
     },
-    ORDEM: ["sdr_ia", "departamento_ia", "workshop", "suporte"]
+    ORDEM: ["sdr_ia", "departamento_ia", "academy", "suporte"]
   };
   window.MX_CFG = CFG;
 
