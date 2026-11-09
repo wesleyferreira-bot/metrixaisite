@@ -247,7 +247,7 @@ html,body{overflow-x:clip}
 .mx-field em{font-style:normal;font-weight:500;color:var(--txt-mute)}
 .mx-input,.mx-select,.mx-textarea{
   width:100%;padding:13px 14px;border-radius:12px;border:1px solid var(--line-2);background:#EDF1F6;color:var(--txt);
-  font:500 15px "Inter",sans-serif;color-scheme:dark;transition:border-color .2s,box-shadow .2s;
+  font:500 15px "Inter",sans-serif;color-scheme:light;transition:border-color .2s,box-shadow .2s;
 }
 .mx-textarea{min-height:92px;resize:vertical}
 .mx-select{appearance:none;-webkit-appearance:none;padding-right:40px;
