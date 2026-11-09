@@ -15,7 +15,7 @@ FOOT = (B / "partials/footer.html").read_text()
 OG_BASE = "https://orxznqmpelrtciiqltfz.supabase.co/storage/v1/object/public/site-publico/og/"
 
 INTERESSES = [("sdr_ia", "Atendimento e SDR com IA"), ("departamento_ia", "Departamento de IA"),
-              ("workshop", "Workshop de IA — 27/10"), ("suporte", "Já sou cliente — suporte")]
+              ("academy", "Metrix Academy — cursos e formação"), ("suporte", "Já sou cliente — suporte")]
 
 def contato(interesse, pagina, titulo, texto, volume=False):
     opts = "\n".join(f'            <option value="{v}"{" selected" if v == interesse else ""}>{r}</option>' for v, r in INTERESSES)
@@ -86,28 +86,34 @@ EVENT = {"@context": "https://schema.org", "@type": "Event", "name": "Workshop d
 
 PAGES = [
     dict(src="home.html", out="index.html", page="home", interesse="sdr_ia", path="/",
-         title="Metrix AI — Atendimento, SDR e Departamento de IA para empresas",
+         title="Metrix AI — SDR com IA, Departamento de IA e formação para empresas",
          og="IA que atende, vende e organiza a sua empresa",
-         desc="A Metrix monta times de atendimento e SDR com IA no WhatsApp, Instagram e ligação, e o Departamento de IA com dados, automações e relatórios. Workshop de IA em 27/10.",
+         desc="SDR com IA que ouve e responde em áudio com voz humanizada, marca na agenda e preenche o CRM sozinha. Departamento de IA com agentes por área, processos automatizados e governança de dados. E a Metrix Academy.",
          img="home.jpg", jsonld=ORG,
          contato=("sdr_ia", "home", "Vamos colocar a IA para trabalhar na sua empresa?", "Conte o que você precisa. Se quiser, teste agora o nosso SDR com IA no WhatsApp — é o mesmo atendimento que os seus clientes vão ter.", True)),
     dict(src="sdr.html", out="sdr-ia/index.html", page="sdr-ia", interesse="sdr_ia", path="/sdr-ia/", cur="SDR",
          title="Atendimento e SDR com IA no WhatsApp | Metrix AI",
          og="Seu time de atendimento e SDR com IA, montado pela Metrix",
-         desc="IA que responde em segundos, qualifica, agenda a reunião e manda o convite. WhatsApp, Instagram e ligação. Planos a partir de R$ 997/mês.",
+         desc="IA que ouve áudio e responde falando, com voz humanizada e respiro. Entende o contexto, qualifica, marca na agenda e preenche o CRM sozinha. Planos a partir de R$ 997/mês.",
          img="sdr.jpg",
          contato=("sdr_ia", "sdr-ia", "Quer ver o SDR funcionando no seu caso?", "Converse com o nosso SDR agora ou deixe seus dados que a gente chama você para um diagnóstico.", True)),
     dict(src="departamento.html", out="departamento-de-ia/index.html", page="departamento-ia", interesse="departamento_ia", path="/departamento-de-ia/", cur="DEPTO",
          title="Departamento de IA para empresas | Metrix AI",
          og="Um Departamento de IA inteiro, sem montar um do zero",
-         desc="Dados em um só lugar, IAs conectadas aos seus sistemas, automações rodando e relatórios pedidos por mensagem. Financeiro, RH, vendas e marketing.",
+         desc="Vamos na sua empresa, entendemos as dores de cada área e desenhamos o processo: agentes de IA treinados por área e tarefa, sistemas sob medida, um ecossistema de dados só, com governança e controle da informação.",
          img="departamento.jpg",
          contato=("departamento_ia", "departamento-ia", "Por onde começar na sua empresa?", "Conte como funciona a sua operação hoje. No diagnóstico, mostramos onde a IA dá mais retorno primeiro.", False)),
-    dict(src="workshop.html", out="workshop-ia/index.html", page="workshop", interesse="workshop", path="/workshop-ia/", cur="WS",
+    dict(src="academy.html", out="academy/index.html", page="academy", interesse="academy", path="/academy/", cur="ACAD",
+         title="Metrix Academy — formação em IA aplicada | Metrix AI",
+         og="Aprenda a ser um especialista de IA",
+         desc="Formação prática em IA aplicada ao trabalho: agentes, automações e processos. Para profissionais e times de empresa, com certificado da Metrix.",
+         img="departamento.jpg",
+         contato=("academy", "academy", "Quer entrar na próxima turma?", "Conte o seu objetivo com IA. A gente responde com o formato, as datas e o que você vai sair sabendo fazer.", False)),
+    dict(src="workshop.html", out="workshop-ia/index.html", page="workshop", interesse="workshop", path="/workshop-ia/", 
          title="Workshop de IA para Empresários — 27/10 em São Caetano do Sul | Metrix AI",
          og="Workshop de IA para Empresários — 27/10, São Caetano do Sul",
          desc="Um dia presencial para entender e aplicar IA no seu negócio: Claude, Lovable, Codex, agentes, automações e mini consultoria. Inscrição vale para 2 pessoas.",
-         img="workshop.jpg", jsonld=EVENT, contato=None),
+         img="workshop.jpg", robots="noindex", contato=None),
     dict(src="obrigado.html", out="workshop-ia/obrigado/index.html", page="workshop-obrigado", interesse="workshop", path="/workshop-ia/obrigado/", cur="WS",
          title="Inscrição no Workshop de IA | Metrix AI", og="Workshop de IA para Empresários — 27/10",
          desc="Confirmação da inscrição no Workshop de IA para Empresários.", img="workshop.jpg", robots="noindex", contato=None, contato_href="/#contato"),
@@ -135,7 +141,7 @@ def build():
             "{{FAVICON}}": FAVICON, "{{V}}": V, "{{PAGE}}": p["page"], "{{INTERESSE}}": p["interesse"],
             "{{CUR_SDR}}": ' aria-current="page"' if cur == "SDR" else "",
             "{{CUR_DEPTO}}": ' aria-current="page"' if cur == "DEPTO" else "",
-            "{{CUR_WS}}": ' aria-current="page"' if cur == "WS" else "",
+            "{{CUR_ACADEMY}}": ' aria-current="page"' if cur == "ACAD" else "",
             "{{CONTATO}}": p.get("contato_href", "#contato"),
             "{{JSONLD}}": ('<script type="application/ld+json">' + json.dumps(p["jsonld"], ensure_ascii=False) + "</script>\n") if p.get("jsonld") else "",
         }
